@@ -1,3 +1,7 @@
+# Deprecation Note:
+
+This module is going to depcrecation mode unless someone else picks up the development.
+
 JS Interpreter
 ==============
 
