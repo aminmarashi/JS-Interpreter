@@ -1,7 +1,11 @@
 JS Interpreter
 ==============
 
+**Note:** This is *NOT* an official package from Neil Fraser or Google, it is just a way to publish the package on NPM with some effort to comply with semver standards, I am not the owner of the original source-code of JS Interpreter.
+
 An npm package for the [Neil Fraser's JS-Interpreter](https://github.com/NeilFraser/JS-Interpreter)
+
+For license and pretty much any other information (except for the NPM package itself) refer to the [original repo](https://github.com/NeilFraser/JS-Interpreter)
 
 This repository is not a fork of the original repository anymore, instead it
 clones it as a `gitmodule` and packs it using `webpack` to an npm package.
