@@ -1,7 +1,9 @@
-import fs from 'fs';
-import readline from 'readline';
-import minimist from 'minimist';
-import { Interpreter } from '../original-repo/interpreter';
+const fs = require('fs');
+const readline = require('readline');
+const minimist = require('minimist');
+const acorn = require('../original-repo/acorn');
+globalThis.acorn = acorn;
+const { Interpreter } = require('../original-repo/interpreter');
 
 const argv = minimist(process.argv.slice(2));
 

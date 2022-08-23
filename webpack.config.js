@@ -8,6 +8,21 @@ function interpreterConfig(
 ) {
     return {
         mode,
+        externals: {
+            'vm': 'commonjs vm'
+        },
+        module: {
+            rules: [
+                {
+                    test: require.resolve("./original-repo/interpreter.js"),
+                    loader: 'exports-loader',
+                    options: {
+                        type: 'commonjs',
+                        exports: 'Interpreter',
+                    },
+                }
+            ]
+        },
         entry : path.resolve(__dirname, 'src', 'js-interpreter.js'),
         output: {
             filename,
@@ -17,11 +32,6 @@ function interpreterConfig(
             libraryTarget: 'umd',
             path         : path.resolve(__dirname, 'lib'),
         },
-        plugins: [
-            new webpack.ProvidePlugin({
-                acorn: path.resolve(__dirname, 'original-repo', 'acorn.js')
-            })
-        ],
         devtool: devtool ? 'cheap-source-map' : false,
     };
 }
@@ -33,6 +43,21 @@ function cliConfig(
 ) {
     return {
         mode,
+        externals: {
+            'vm': 'commonjs vm'
+        },
+        module: {
+            rules: [
+                {
+                    test: require.resolve("./original-repo/interpreter.js"),
+                    loader: 'exports-loader',
+                    options: {
+                        type: 'commonjs',
+                        exports: 'Interpreter',
+                    },
+                }
+            ]
+        },
         entry : path.resolve(__dirname, 'src', 'cli.js'),
         target: 'node',
         output: {
@@ -40,9 +65,6 @@ function cliConfig(
             path    : path.resolve(__dirname, 'lib'),
         },
         plugins: [
-            new webpack.ProvidePlugin({
-                acorn: path.resolve(__dirname, 'original-repo', 'acorn.js')
-            }),
             new webpack.BannerPlugin({
                 banner: '#!/usr/bin/env node',
                 raw   : true,
