@@ -1,12 +1,43 @@
 # Changelog
 
-**Disclaimer:** This changelog is not created by the original author of JS
+**Disclaimer:** This changelog is NOT created by the original author of JS
 Interpreter, instead it is created by examining the changes made to the
 original repo of JS-Interpreter, to identify new features, bug fixes and
 breaking changes.
 
 The version is chosen based on the type of changes according to the
 [semver](https://semver.org/) guidelines.
+
+## [3.0.0] - 2022-08-23
+
+Commit: [c4c5736](https://github.com/NeilFraser/JS-Interpreter/tree/c4c5736)
+
+### Added
+
+- Add script for compiling acorn_interpreter.js
+- Add getters and setters for stateStack.
+- Add support for sparse arrays in Array polyfills
+- Add function names to error stack
+- Add a 'stack' property to errors.
+
+### Fixed
+
+- Fix missing node type when scope spidering.
+- Fix serialization/deserialization.
+- Fix 'this' bug in Function wrapper.
+- Fix RegExp.test not updating lastIndex
+- Fix unusual RegExp constructor patterns.
+
+### Changed
+
+- Explicitly `close()` finished RegExp workers.
+- Switch from blacklist to whitelist of node types
+- Decompose (de)serialize functions.
+- Recompile compressed file to be ES5.
+- Remove start/end props from deserialized polyfills
+- Compress location data in serialization format
+- Use globalThis to allow import to work
+- Safety check if top node is CallExpression
 
 ## [2.3.1] - 2021-08-11
 

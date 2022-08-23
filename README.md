@@ -17,7 +17,15 @@ Changes are recorded on a best effort basis in [CHANGELOG.md](CHANGELOG.md).
 
 # Installation
 
-`npm install js-interpreter`
+```
+npm install js-interpreter
+```
+
+or
+
+```
+yarn add js-interpreter
+```
 
 # Usage
 
@@ -59,6 +67,6 @@ git submodule foreach git pull origin master
 - Check all the commits on the origin to identify the changes and update `CHANGELOG.md`
 - Bump the version according to semver rules
 - After PR is merged:
-  - Run `npm install` to install the dependencies
-  - Run `npm publish` to publish the package
+  - Run `yarn install` to install the dependencies
+  - Run `yarn publish` to publish the package
   - Push the version as a tag to Github

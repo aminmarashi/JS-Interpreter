@@ -1,6 +1,6 @@
 {
   "name": "js-interpreter",
-  "version": "2.3.1",
+  "version": "3.0.0",
   "description": "NPM package for https://github.com/NeilFraser/JS-Interpreter",
   "main": "lib/js-interpreter.min.js",
   "module": "lib/js-interpreter.js",
@@ -11,12 +11,9 @@
   "scripts": {
     "build": "webpack --config webpack.config.js",
     "syntax": "eslint src",
-    "prepublish": "webpack && npm run build"
+    "prepublish": "webpack && yarn build"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/aminmarashi/JS-Interpreter.git"
-  },
+  "repository": "git+https://github.com/aminmarashi/JS-Interpreter.git",
   "author": "Amin Marashi",
   "license": "Apache-2.0",
   "bugs": {
