@@ -8,6 +8,26 @@ breaking changes.
 The version is chosen based on the type of changes according to the
 [semver](https://semver.org/) guidelines.
 
+## [4.0.0] - 2022-12-06
+
+Commit: [05d55b8](https://github.com/NeilFraser/JS-Interpreter/tree/05d55b8)
+
+### Added
+
+- Bump Acorn from 0.4.1 to 0.5.0
+- Expose VALUE_IN_DESCRIPTOR symbol
+
+### Removed
+
+- Remove support for ES3 from Acorn
+- Remove ES6 's' and 'y' flags from Acorn's Regexp
+
+### Changed
+
+- Fold special numbers into special values
+- Factor out location object encoding/decoding.
+- Throw real errors during init
+
 ## [3.0.0] - 2022-08-23
 
 Commit: [c4c5736](https://github.com/NeilFraser/JS-Interpreter/tree/c4c5736)
