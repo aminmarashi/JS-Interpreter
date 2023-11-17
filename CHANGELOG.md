@@ -7,6 +7,20 @@ breaking changes.
 
 The version is chosen based on the type of changes according to the
 [semver](https://semver.org/) guidelines.
+
+## [5.1.0] - 2023-11-17
+
+Commit: [392ab77](https://github.com/NeilFraser/JS-Interpreter/tree/392ab77)
+
+### Added
+
+- Add getStatus function.
+
+### Fixed
+
+- Fix typo in error message
+
+
 ## [5.0.0] - 2023-08-18
 
 Commit: [10a8cf5](https://github.com/NeilFraser/JS-Interpreter/tree/10a8cf5)
