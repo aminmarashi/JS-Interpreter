@@ -8,6 +8,26 @@ breaking changes.
 The version is chosen based on the type of changes according to the
 [semver](https://semver.org/) guidelines.
 
+## [5.1.1] - 2024-03-17
+
+Commit: [697a109](https://github.com/NeilFraser/JS-Interpreter/tree/697a109)
+
+### Added
+
+- Add 'window' as fallback for globalThis or this.
+
+### Fixed
+
+- Fix array splice where arguments are missing
+- Fix throw inside Date toISOString.
+
+### Other
+
+- Upgrade global object detection in Acorn
+- Fold arrayPseudoToNative_ into Function's .apply
+- Overhaul nativeToPseudo and pseudoToNative
+- Tighten output of matches.
+
 ## [5.1.0] - 2023-11-17
 
 Commit: [392ab77](https://github.com/NeilFraser/JS-Interpreter/tree/392ab77)
