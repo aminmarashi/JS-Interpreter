@@ -8,6 +8,20 @@ breaking changes.
 The version is chosen based on the type of changes according to the
 [semver](https://semver.org/) guidelines.
 
+## [5.1.2] - 2024-05-17
+
+Commit: [9c31dcb](https://github.com/NeilFraser/JS-Interpreter/tree/9c31dcb)
+
+### Fixed
+
+- Fix missing names on array functions
+- Fix return in a task.
+
+### Other
+
+- Compress the polyfills.
+- Make completion type check more explicit.
+
 ## [5.1.1] - 2024-03-17
 
 Commit: [697a109](https://github.com/NeilFraser/JS-Interpreter/tree/697a109)
