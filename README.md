@@ -55,10 +55,19 @@ or
 echo 'console.log(1 + 2)' | js-interpreter 
 ```
 
-# Update
+# Updating the submodules
 
-- Create a new branch
-- Update the submodules
+## Initialization
+
+After the first time cloning this repository you would need to pull the `original-repo` from GitHub using the following command:
+
+```bash
+git submodule update --init --recursive
+```
+
+## Updating the submodule
+
+If you've already initialized the repository and you want to fetch the latest changes use the following command:
 
 ```
 git submodule foreach git pull origin master
