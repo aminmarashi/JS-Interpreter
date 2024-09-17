@@ -8,7 +8,7 @@ breaking changes.
 The version is chosen based on the type of changes according to the
 [semver](https://semver.org/) guidelines.
 
-## [5.2.0] - 2024-09-17
+## [5.2.1] - 2024-09-17
 
 Commit: [c73dbb09](https://github.com/NeilFraser/JS-Interpreter/tree/c73dbb09)
 
