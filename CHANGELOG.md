@@ -8,6 +8,18 @@ breaking changes.
 The version is chosen based on the type of changes according to the
 [semver](https://semver.org/) guidelines.
 
+## [5.2.0] - 2024-09-17
+
+Commit: [c73dbb09](https://github.com/NeilFraser/JS-Interpreter/tree/c73dbb09)
+
+### Added
+
+- Add setGlobalScope function
+
+### Other
+
+- Ownership change
+
 ## [5.1.2] - 2024-05-17
 
 Commit: [9c31dcb](https://github.com/NeilFraser/JS-Interpreter/tree/9c31dcb)
