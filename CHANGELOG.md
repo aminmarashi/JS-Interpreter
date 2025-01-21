@@ -8,6 +8,75 @@ breaking changes.
 The version is chosen based on the type of changes according to the
 [semver](https://semver.org/) guidelines.
 
+## [6.0.0] - 2025-01-21
+
+Commit: [d5b0311dfde3cf581a51adf4ec7fd6777e0c240e](https://github.com/NeilFraser/JS-Interpreter/tree/d5b0311dfde3cf581a51adf4ec7fd6777e0c240e)
+
+### Added
+
+- Add setGlobalScope function
+- Add 'window' as fallback for globalThis or this.
+- Add getStatus function.
+- Add trailing commas in obj literals
+
+### Removed
+
+- Remove unused tokTypes array from Acorn.
+- Remove unused 'tokenize' function from Acorn.
+- Remove two obsolete unused properties from Acorn.
+- Remove support for ES3 from Acorn
+- Remove ES6 's' and 'y' flags from Acorn's Regexp
+
+### Fixed
+
+- Fix missing names on array functions
+- Fix return in a task.
+- Fix array splice where arguments are missing
+- Fix throw inside Date toISOString.
+- Fix typo in error message
+- Fix null vs undefined type.
+- Fix Acorn URL
+- Fix infinite recursion trap on last step
+
+### Other
+
+- Clarify where REGEXP_MODE is set.
+- Support boxed primitives between native<->pseudo
+- Ownership change
+- Compress the polyfills.
+- Make completion type check more explicit.
+- Upgrade global object detection in Acorn
+- Fold arrayPseudoToNative_ into Function's .apply
+- Overhaul nativeToPseudo and pseudoToNative
+- Tighten output of matches.
+- Support serialization of setTimeout (and friends)
+- Support setTimeout and related functions.
+- Advanced compilation of Acorn
+- Quote Acorn's options.
+- Acorn meets the style guide.
+- Turn on verbose warnings in build script.
+- Simpler approach for func params named 'arguments'
+- Don't define arguments if param is named that.
+- Move function name out of inner scope
+- Catchable readonly variables
+- Change @return to @returns
+- Stop exporting six unused Acorn properties/methods
+- Reduce Array polyfills by 1 KB.
+- Inline CatchClause step
+- Simplify 'catch' and 'with' blocks.
+- Speed up serialization on larger environments
+- Revert removal of recursion
+- Double speed of serialization.
+- Clear return value before expression
+- Set or unset .value if error is thrown.
+- Inprove consistency between array polyfills.
+- Underscore unused catch variables.
+- Use case statements.
+- Fold special numbers into special values
+- Factor out location object encoding/decoding.
+- Expose VALUE_IN_DESCRIPTOR symbol
+- Throw real errors during init
+
 ## [5.2.1] - 2024-09-17
 
 Commit: [c73dbb09](https://github.com/NeilFraser/JS-Interpreter/tree/c73dbb09)

@@ -1,6 +1,6 @@
 {
   "name": "js-interpreter",
-  "version": "5.2.1",
+  "version": "6.0.0",
   "description": "NPM package for https://github.com/NeilFraser/JS-Interpreter",
   "main": "lib/js-interpreter.min.js",
   "module": "lib/js-interpreter.js",
