@@ -8,6 +8,14 @@ breaking changes.
 The version is chosen based on the type of changes according to the
 [semver](https://semver.org/) guidelines.
 
+## [6.0.1] - 2025-04-04
+
+Commit: [37e73f830051d4bcfdf0e6b466e7bd8dc1d45709](https://github.com/NeilFraser/JS-Interpreter/tree/37e73f830051d4bcfdf0e6b466e7bd8dc1d45709)
+
+### Fixed
+
+- Fix 'apply' where no args are specified.
+
 ## [6.0.0] - 2025-01-21
 
 Commit: [d5b0311dfde3cf581a51adf4ec7fd6777e0c240e](https://github.com/NeilFraser/JS-Interpreter/tree/d5b0311dfde3cf581a51adf4ec7fd6777e0c240e)
