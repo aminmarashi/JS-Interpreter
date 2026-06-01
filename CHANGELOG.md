@@ -8,6 +8,21 @@ breaking changes.
 The version is chosen based on the type of changes according to the
 [semver](https://semver.org/) guidelines.
 
+## [6.0.2] - 2026-06-02
+
+Commit: [174c2e7](https://github.com/NeilFraser/JS-Interpreter/tree/174c2e7)
+
+### Fixed
+
+- Fix isArray on falsey values
+- Fix split if limit was 0.
+
+### Other
+
+- Convert line endings from CRLF to LF
+- Support name and length on bound functions.
+- Array.sort should throw if given a non-function
+
 ## [6.0.1] - 2025-04-04
 
 Commit: [37e73f830051d4bcfdf0e6b466e7bd8dc1d45709](https://github.com/NeilFraser/JS-Interpreter/tree/37e73f830051d4bcfdf0e6b466e7bd8dc1d45709)
